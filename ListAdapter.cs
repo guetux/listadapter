@@ -15,7 +15,7 @@ namespace <PutYourNameSpaceHere> {
 		protected ObservableCollection<T> _items;
 
 		/// <summary>
-		/// The underlying collection for this adapter. 
+		/// The underlying collection for this adapter.
 		/// Changing items will update the ListView directly.
 		/// </summary>
 		/// <value>The items.</value>
@@ -57,7 +57,7 @@ namespace <PutYourNameSpaceHere> {
 				return _items.Count;
 			}
 		}
-			
+
 		public override Java.Lang.Object GetItem(int position) {
 			return null;
 		}
@@ -105,9 +105,9 @@ namespace <PutYourNameSpaceHere> {
 		/// <summary>
 		/// Bind an item of the list to the corresponding view holder view.
 		/// </summary>
-		/// <param name="viewHoler">The view holer.</param>
+		/// <param name="viewHolder">The view holder.</param>
 		/// <param name="item">The Item.</param>
-		public abstract void BindViewHolder(VH viewHoler, T item);
+		public abstract void BindViewHolder(VH viewHolder, T item);
 
 		public override View GetView(int position, View convertView, ViewGroup parent) {
 			VH viewHolder;
